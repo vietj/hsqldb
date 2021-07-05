@@ -1,0 +1,4 @@
+jdk:
+  - openjdk8
+install:
+   - ./build/gradlew -b build/build.gradle -Dbuild.debug=true hsqldb
