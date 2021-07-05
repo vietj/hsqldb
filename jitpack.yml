@@ -2,3 +2,4 @@ jdk:
   - openjdk8
 install:
    - ./build/gradlew -b build/build.gradle -Dbuild.debug=true hsqldb
+   - mvn install:install-file -Dfile=lib/hsqldb.jar -DgroupId=com.github.vietj -DartifactId=hsqldb -Dversion=test2 -Dpackaging=jar -DgeneratePom=true
